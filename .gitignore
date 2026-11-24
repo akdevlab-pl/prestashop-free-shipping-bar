@@ -1,0 +1,8 @@
+*.zip
+.env
+config_*.xml
+/vendor/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

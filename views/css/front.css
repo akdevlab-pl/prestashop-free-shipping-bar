@@ -1,0 +1,28 @@
+/* AK DevLab - Free Shipping Bar */
+.akdl-fs {
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--akdl-fs-accent, #16a34a);
+  border-radius: 10px;
+  background: var(--akdl-fs-bg, #f0fdf4);
+  color: var(--akdl-fs-text, #14532d);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.akdl-fs b { color: var(--akdl-fs-accent, #16a34a); }
+.akdl-fs__bar {
+  height: 6px;
+  margin-top: 8px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, .08);
+  overflow: hidden;
+}
+.akdl-fs__fill {
+  height: 100%;
+  border-radius: 6px;
+  background: var(--akdl-fs-accent, #16a34a);
+  transition: width .4s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .akdl-fs__fill { transition: none; }
+}
